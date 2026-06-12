@@ -1,0 +1,35 @@
+name: AT Hot Deals Price Monitor
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run price monitor
+        run: python scripts/monitor.py
+
+      - name: Commit changes (if any)
+        run: |
+          git config user.name  "AT Price Monitor"
+          git config user.email "monitor@autotrader-hotdeals.bot"
+          git add data/state.json data/history.json tokens/
+          git diff --cached --quiet || git commit -m "chore: price update $(date -u '+%Y-%m-%d %H:%M UTC')"
+          git push
