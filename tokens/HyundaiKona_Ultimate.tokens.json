@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "318"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "Hyundai KONA"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "1.6 h-GDi Ultimate DCT Euro 6 (s/s) 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £3,806.94, followed by 59 monthly rentals of £317.25 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202510107064494",
+  "$extensions": {
+    "com.figma.modeName": "Hyundai KONA"
+  },
+  "$cars_variant": "Hyundai KONA",
+  "$pmax_slug": "HyundaiKona_Ultimate"
+}

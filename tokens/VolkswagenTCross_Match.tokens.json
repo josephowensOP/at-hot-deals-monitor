@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "164"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "Volkswagen T-Cross"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "1.0 TSI Match Euro 6 (s/s) 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £1,966.11, followed by 23 monthly rentals of £163.84 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202402297079682",
+  "$extensions": {
+    "com.figma.modeName": "VolkswagenTCross_Match"
+  },
+  "$cars_variant": "VolkswagenTCross_Match",
+  "$pmax_slug": "VolkswagenTCross_Match"
+}

@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "397"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "Skoda Karoq"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "1.5 TSI ACT SportLine Edition DSG Euro 6 (s/s) 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £4,763.21, followed by 59 monthly rentals of £396.93 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202410024749576?leaseContractType=personal&leaseOption=12_60_5000",
+  "$extensions": {
+    "com.figma.modeName": "Skoda Karoq"
+  },
+  "$cars_variant": "Skoda Karoq",
+  "$pmax_slug": "SkodaKaroq_ActSportlineEdition"
+}

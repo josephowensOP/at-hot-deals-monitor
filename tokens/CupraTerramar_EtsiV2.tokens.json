@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "294"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "CUPRA Terramar"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "1.5 eTSI V2 DSG Euro 6 (s/s) 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £3,522.96, followed by 23 monthly rentals of £293.58 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202412247518674?leaseContractType=personal&leaseOption=12_24_5000",
+  "$extensions": {
+    "com.figma.modeName": "CUPRA"
+  },
+  "$cars_variant": "CUPRA",
+  "$pmax_slug": "CupraTerramar_EtsiV2"
+}

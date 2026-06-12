@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "300"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "JAECOO 7"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "1.5T SHS 18.3kWh Luxury Auto Euro 6 (s/s) 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £3,598.60, followed by 35 monthly rentals of £299.88 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202501107899510?leaseContractType=personal&leaseOption=12_36_5000",
+  "$extensions": {
+    "com.figma.modeName": "Jaecoo 7"
+  },
+  "$cars_variant": "Jaecoo 7",
+  "$pmax_slug": "Jaecoo7_ShsLuxury"
+}

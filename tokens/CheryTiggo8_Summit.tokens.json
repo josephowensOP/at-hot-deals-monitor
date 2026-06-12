@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "270"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "Chery Tiggo 8"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "1.6T Summit DCT Euro 6 (s/s) 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £3,231.56, followed by 35 monthly rentals of £269.30 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202509106209618?leaseContractType=personal&leaseOption=12_36_5000",
+  "$extensions": {
+    "com.figma.modeName": "Chery Tiggo 8"
+  },
+  "$cars_variant": "Chery Tiggo 8",
+  "$pmax_slug": "CheryTiggo8_Summit"
+}

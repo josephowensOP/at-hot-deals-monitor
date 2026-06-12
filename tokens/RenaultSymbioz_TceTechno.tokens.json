@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "174"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "Renault Symbioz"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "1.3 TCe MHEV techno Euro 6 (s/s) 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £2,087.64, followed by 23 monthly rentals of £173.97 (inc. VAT). 8,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202507264861869?leaseContractType=personal&leaseOption=12_24_8000",
+  "$extensions": {
+    "com.figma.modeName": "Renault Symbioz"
+  },
+  "$cars_variant": "Renault Symbioz",
+  "$pmax_slug": "RenaultSymbioz_TceTechno"
+}

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>AT Hot Deals — Price Monitor</title>
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg:        #0f1117;
+    --surface:   #1a1d27;
+    --border:    #2a2d3a;
+    --text:      #e8eaf0;
+    --muted:     #8b8fa8;
+    --accent:    #6366f1;
+    --green:     #22c55e;
+    --red:       #ef4444;
+    --amber:     #f59e0b;
+    --up:        #ef4444;
+    --down:      #22c55e;
+    --neutral:   #6b7280;
+  }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+    padding: 24px 20px 60px;
+  }
+
+  /* ── Header ── */
+  .header {
+    max-width: 1100px;
+    margin: 0 auto 32px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 16px;
+    flex-wrap: wrap;
+  }
+
+  .header-title h1 { font-size: 22px; font-weight: 700; letter-spacing: -0.4px; }
+  .header-title p  { font-size: 13px; color: var(--muted); margin-top: 4px; }
+
+  .header-meta {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .badge {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 6px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--muted);
+  }
+  .badge span { color: var(--text); font-weight: 600; }
+
+  /* ── Stats row ── */
+  .stats {
+    max-width: 1100px;
+    margin: 0 auto 28px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 12px;
+  }
+
+  .stat-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 16px 18px;
+  }
+  .stat-card .label { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
+  .stat-card .value { font-size: 28px; font-weight: 700; margin-top: 4px; }
+  .stat-card .value.green { color: var(--green); }
+  .stat-card .value.red   { color: var(--red); }
+  .stat-card .value.amber { color: var(--amber); }
+
+  /* ── Filter bar ── */
+  .filter-bar {
+    max-width: 1100px;
+    margin: 0 auto 20px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+
+  .filter-btn {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .filter-btn:hover, .filter-btn.active {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+
+  /* ── Grid ── */
+  .grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 14px;
+  }
+
+  .car-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    transition: border-color 0.15s;
+  }
+  .car-card:hover { border-color: var(--accent); }
+  .car-card.changed { border-color: var(--amber); }
+
+  .card-header {
+    padding: 16px 18px 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .car-name h3 { font-size: 15px; font-weight: 600; }
+  .car-name p  { font-size: 12px; color: var(--muted); margin-top: 2px; line-height: 1.4; }
+
+  .price-block { text-align: right; flex-shrink: 0; }
+  .price-block .price {
+    font-size: 26px;
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    font-variant-numeric: tabular-nums;
+  }
+  .price-block .price-label { font-size: 10px; color: var(--muted); margin-top: 1px; }
+
+  .card-body {
+    padding: 0 18px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .status-pill {
+    font-size: 11px;
+    font-weight: 600;
+    padding: 3px 10px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .status-pill.has-pmax    { background: rgba(34,197,94,0.12); color: var(--green); }
+  .status-pill.no-pmax     { background: rgba(239,68,68,0.12); color: var(--red); }
+  .status-pill.changed-up  { background: rgba(239,68,68,0.12); color: var(--up); }
+  .status-pill.changed-down{ background: rgba(34,197,94,0.12); color: var(--down); }
+
+  .card-actions { display: flex; gap: 6px; }
+
+  .btn-link {
+    font-size: 11px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--muted);
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.15s;
+  }
+  .btn-link:hover { border-color: var(--accent); color: var(--accent); }
+
+  /* ── History panel ── */
+  .history-panel {
+    border-top: 1px solid var(--border);
+    display: none;
+  }
+  .history-panel.open { display: block; }
+
+  .history-header {
+    padding: 10px 18px;
+    font-size: 11px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .history-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 12px;
+  }
+  .history-table td {
+    padding: 7px 18px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+  }
+  .history-table td:last-child { text-align: right; }
+  .history-table .ht-price { color: var(--text); font-weight: 600; font-variant-numeric: tabular-nums; }
+  .history-table .ht-up    { color: var(--up); }
+  .history-table .ht-down  { color: var(--down); }
+  .history-table .ht-same  { color: var(--neutral); }
+
+  /* ── Last checked bar ── */
+  .footer {
+    max-width: 1100px;
+    margin: 32px auto 0;
+    font-size: 12px;
+    color: var(--muted);
+    text-align: center;
+  }
+
+  /* ── Loading/error ── */
+  .loading {
+    max-width: 1100px;
+    margin: 60px auto;
+    text-align: center;
+    color: var(--muted);
+    font-size: 14px;
+  }
+
+  .dot-pulse { display: inline-flex; gap: 4px; }
+  .dot-pulse span {
+    width: 6px; height: 6px; border-radius: 50%; background: var(--muted);
+    animation: pulse 1.2s ease-in-out infinite;
+  }
+  .dot-pulse span:nth-child(2) { animation-delay: 0.2s; }
+  .dot-pulse span:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes pulse { 0%,80%,100% { opacity: 0.2; } 40% { opacity: 1; } }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <div class="header-title">
+    <h1>🚗 AT Hot Deals — Price Monitor</h1>
+    <p id="last-checked">Loading…</p>
+  </div>
+  <div class="header-meta">
+    <div class="badge">Runs hourly</div>
+    <div class="badge" id="badge-checked">— cars tracked</div>
+  </div>
+</div>
+
+<div class="stats">
+  <div class="stat-card">
+    <div class="label">With PMAX</div>
+    <div class="value green" id="stat-pmax">—</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Needs PMAX</div>
+    <div class="value amber" id="stat-no-pmax">—</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Price Changes (24h)</div>
+    <div class="value" id="stat-changes">—</div>
+  </div>
+  <div class="stat-card">
+    <div class="label">Total Tracked</div>
+    <div class="value" id="stat-total">—</div>
+  </div>
+</div>
+
+<div class="filter-bar">
+  <button class="filter-btn active" data-filter="all">All</button>
+  <button class="filter-btn" data-filter="pmax">✅ Has PMAX</button>
+  <button class="filter-btn" data-filter="no-pmax">❌ Needs PMAX</button>
+  <button class="filter-btn" data-filter="changed">🔔 Changed recently</button>
+</div>
+
+<div id="loading" class="loading">
+  <div class="dot-pulse"><span></span><span></span><span></span></div>
+  <p style="margin-top:12px">Loading price data…</p>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<div class="footer" id="footer"></div>
+
+<script>
+// ── Data fetching ─────────────────────────────────────────────────────────────
+
+async function fetchJSON(path) {
+  // Works on GitHub Pages — files are relative to root
+  const r = await fetch(path + '?t=' + Date.now());
+  if (!r.ok) throw new Error(`Failed to load ${path}: ${r.status}`);
+  return r.json();
+}
+
+function timeAgo(isoStr) {
+  if (!isoStr) return 'never';
+  const d = new Date(isoStr);
+  const mins = Math.floor((Date.now() - d) / 60000);
+  if (mins < 2)  return 'just now';
+  if (mins < 60) return `${mins}m ago`;
+  const hrs = Math.floor(mins / 60);
+  if (hrs < 24)  return `${hrs}h ago`;
+  return d.toLocaleDateString('en-GB', { day:'numeric', month:'short' });
+}
+
+function formatTS(isoStr) {
+  if (!isoStr) return '—';
+  const d = new Date(isoStr);
+  return d.toLocaleString('en-GB', {
+    day:'numeric', month:'short', year:'numeric',
+    hour:'2-digit', minute:'2-digit', timeZoneName:'short'
+  });
+}
+
+// ── Render helpers ────────────────────────────────────────────────────────────
+
+function recentChanges(history, slug, hours = 24) {
+  const h = history[slug];
+  if (!h || !h.prices || !h.prices.length) return [];
+  const cutoff = Date.now() - hours * 3600 * 1000;
+  return h.prices.filter(e => new Date(e.timestamp).getTime() > cutoff);
+}
+
+function latestChange(history, slug) {
+  const h = history[slug];
+  if (!h || !h.prices || !h.prices.length) return null;
+  return h.prices[h.prices.length - 1];
+}
+
+function renderCard(deal, history) {
+  const slug     = deal.slug;
+  const hasPmax  = deal.has_pmax;
+  const url      = deal.url ? deal.url.split('?')[0] : '#';
+  const recent   = recentChanges(history, slug, 24);
+  const last     = latestChange(history, slug);
+  const allPrices = (history[slug] && history[slug].prices) || [];
+  const changed  = recent.length > 0;
+
+  // Price change badge
+  let changePill = '';
+  if (last) {
+    const dir = last.direction === 'up' ? 'up' : 'down';
+    const sym = last.direction === 'up' ? '↑' : '↓';
+    const delta = Math.abs(last.price - last.previous);
+    changePill = `<span class="status-pill changed-${dir}">${sym} £${delta} (was £${last.previous})</span>`;
+  }
+
+  // History rows (latest 8)
+  const rows = allPrices.slice().reverse().slice(0, 8).map(e => {
+    const dir = e.direction === 'up' ? 'ht-up' : (e.direction === 'down' ? 'ht-down' : 'ht-same');
+    const sym = e.direction === 'up' ? '↑' : '↓';
+    const delta = Math.abs(e.price - e.previous);
+    return `<tr>
+      <td>${formatTS(e.timestamp)}</td>
+      <td class="ht-price">£${e.price}/mo</td>
+      <td class="${dir}">${sym} £${delta}</td>
+    </tr>`;
+  }).join('');
+
+  const historySection = allPrices.length > 0 ? `
+    <div class="history-panel" id="hist-${slug}">
+      <div class="history-header">
+        <span>Price history</span>
+        <span>${allPrices.length} change${allPrices.length !== 1 ? 's' : ''} recorded</span>
+      </div>
+      <table class="history-table">
+        <tbody>${rows}</tbody>
+      </table>
+    </div>` : '';
+
+  return `
+    <div class="car-card ${changed ? 'changed' : ''}"
+         data-pmax="${hasPmax}"
+         data-changed="${changed}"
+         data-slug="${slug || ''}">
+      <div class="card-header">
+        <div class="car-name">
+          <h3>${deal.headline}</h3>
+          <p>${deal.subheadline || ''}</p>
+        </div>
+        <div class="price-block">
+          <div class="price">£${deal.leaseprice}</div>
+          <div class="price-label">per month</div>
+        </div>
+      </div>
+      <div class="card-body">
+        <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center">
+          ${hasPmax
+            ? '<span class="status-pill has-pmax">✅ PMAX built</span>'
+            : '<span class="status-pill no-pmax">❌ Needs PMAX</span>'}
+          ${changePill}
+        </div>
+        <div class="card-actions">
+          ${allPrices.length > 0
+            ? `<button class="btn-link" onclick="toggleHistory('${slug}')">History</button>`
+            : ''}
+          ${url !== '#' ? `<a class="btn-link" href="${url}" target="_blank">AT ↗</a>` : ''}
+        </div>
+      </div>
+      ${historySection}
+    </div>`;
+}
+
+function toggleHistory(slug) {
+  const el = document.getElementById('hist-' + slug);
+  if (el) el.classList.toggle('open');
+}
+
+// ── Filter logic ──────────────────────────────────────────────────────────────
+
+let currentFilter = 'all';
+
+function applyFilter(filter) {
+  currentFilter = filter;
+  document.querySelectorAll('.filter-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.filter === filter);
+  });
+  document.querySelectorAll('.car-card').forEach(card => {
+    const show =
+      filter === 'all'     ? true :
+      filter === 'pmax'    ? card.dataset.pmax === 'true' :
+      filter === 'no-pmax' ? card.dataset.pmax === 'false' :
+      filter === 'changed' ? card.dataset.changed === 'true' : true;
+    card.style.display = show ? '' : 'none';
+  });
+}
+
+document.querySelectorAll('.filter-btn').forEach(btn => {
+  btn.addEventListener('click', () => applyFilter(btn.dataset.filter));
+});
+
+// ── Init ──────────────────────────────────────────────────────────────────────
+
+async function init() {
+  try {
+    const [state, history] = await Promise.all([
+      fetchJSON('data/state.json'),
+      fetchJSON('data/history.json').catch(() => ({}))
+    ]);
+
+    document.getElementById('loading').style.display = 'none';
+
+    // Header
+    const ts = state.last_checked;
+    document.getElementById('last-checked').textContent =
+      ts ? `Last checked: ${formatTS(ts)} (${timeAgo(ts)})` : 'Never checked';
+
+    const deals     = state.deals || [];
+    const hasPmax   = deals.filter(d => d.has_pmax).length;
+    const noPmax    = deals.filter(d => !d.has_pmax).length;
+    const withSlug  = deals.filter(d => d.slug);
+
+    // Count changes in last 24h across all deals
+    const changes24h = withSlug.reduce((acc, d) => {
+      return acc + recentChanges(history, d.slug, 24).length;
+    }, 0);
+
+    document.getElementById('badge-checked').innerHTML = `<span>${deals.length}</span> cars tracked`;
+    document.getElementById('stat-pmax').textContent    = hasPmax;
+    document.getElementById('stat-no-pmax').textContent = noPmax;
+    document.getElementById('stat-total').textContent   = deals.length;
+
+    const changesEl = document.getElementById('stat-changes');
+    changesEl.textContent = changes24h;
+    changesEl.className = 'value ' + (changes24h > 0 ? 'amber' : 'green');
+
+    // Render cards — PMAX ones first, then no-PMAX
+    const sorted = [
+      ...deals.filter(d => d.has_pmax),
+      ...deals.filter(d => !d.has_pmax),
+    ];
+
+    document.getElementById('grid').innerHTML = sorted.map(d => renderCard(d, history)).join('');
+    applyFilter(currentFilter);
+
+    document.getElementById('footer').textContent =
+      `Data refreshed hourly via GitHub Actions • ${deals.length} deals tracked`;
+
+  } catch (err) {
+    document.getElementById('loading').innerHTML =
+      `<p style="color:#ef4444">⚠ Failed to load data: ${err.message}</p>
+       <p style="margin-top:8px;font-size:12px">Make sure the repo has GitHub Pages enabled on the main branch.</p>`;
+    console.error(err);
+  }
+}
+
+init();
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "299"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "BYD Seal"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "82.5kWh Design Auto 4dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £3,586.28, followed by 35 monthly rentals of £298.86 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202311214153723?leaseOption=12_36_5000",
+  "$extensions": {
+    "com.figma.modeName": "BYD Seal"
+  },
+  "$cars_variant": "BYD Seal",
+  "$pmax_slug": "BydSeal_Design"
+}

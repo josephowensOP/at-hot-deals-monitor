@@ -1,0 +1,138 @@
+{
+  "last_checked": "2026-06-12",
+  "source": "https://www.autotrader.co.uk/cars/leasing",
+  "deals": [
+    {
+      "headline": "Volkswagen T-Cross",
+      "subheadline": "1.0 TSI Match Euro 6 (s/s) 5dr",
+      "leaseprice": 164,
+      "monthly_exact": 163.84,
+      "listing_id": "202402297079682",
+      "url": "https://www.autotrader.co.uk/cars/leasing/product/202402297079682",
+      "frame_name": "PMAX_Hotdeals_VolkswagenTCross_Match",
+      "slug": "VolkswagenTCross_Match",
+      "figma_car_mode": "Volkswagen T-Cross",
+      "has_pmax": true
+    },
+    {
+      "headline": "BYD Seal",
+      "subheadline": "82.5kWh Design Auto 4dr",
+      "leaseprice": 299,
+      "monthly_exact": 298.86,
+      "listing_id": "202311214153723",
+      "url": "https://www.autotrader.co.uk/cars/leasing/product/202311214153723?leaseContractType=personal&leaseOption=12_36_5000",
+      "frame_name": "PMAX_Hotdeals_BydSeal_Design",
+      "slug": "BydSeal_Design",
+      "figma_car_mode": "BYD Seal",
+      "has_pmax": true
+    },
+    {
+      "headline": "Nissan Juke",
+      "subheadline": "1.0 DIG-T N-Connecta Euro 6 (s/s) 5dr",
+      "leaseprice": 193,
+      "monthly_exact": 192.32,
+      "listing_id": "202408283373052",
+      "url": "https://www.autotrader.co.uk/cars/leasing/product/202408283373052?leaseContractType=personal&leaseOption=12_48_6000",
+      "frame_name": "PMAX_Hotdeals_NissanJuke_NConnecta",
+      "slug": "NissanJuke_NConnecta",
+      "figma_car_mode": "Nissan Juke N-Connecta",
+      "has_pmax": true
+    },
+    {
+      "headline": "JAECOO 7",
+      "subheadline": "1.5T SHS 18.3kWh Luxury Auto Euro 6 (s/s) 5dr",
+      "leaseprice": 300,
+      "monthly_exact": 299.84,
+      "listing_id": "202501107899510",
+      "url": "https://www.autotrader.co.uk/cars/leasing/product/202501107899510?leaseContractType=personal&leaseOption=12_36_5000",
+      "frame_name": "PMAX_Hotdeals_Jaecoo7_ShsLuxury",
+      "slug": "Jaecoo7_ShsLuxury",
+      "figma_car_mode": "Jaecoo 7",
+      "has_pmax": true
+    },
+    {
+      "headline": "Chery Tiggo 8",
+      "subheadline": "1.6T Summit DCT Euro 6 (s/s) 5dr",
+      "leaseprice": 270,
+      "monthly_exact": 269.3,
+      "listing_id": "202509106209618",
+      "url": "https://www.autotrader.co.uk/cars/leasing/product/202509106209618?leaseContractType=personal&leaseOption=12_36_5000",
+      "frame_name": "PMAX_Hotdeals_CheryTiggo8_Summit",
+      "slug": "CheryTiggo8_Summit",
+      "figma_car_mode": "Chery Tiggo 8",
+      "has_pmax": true
+    },
+    {
+      "headline": "CUPRA Terramar",
+      "subheadline": "1.5 eTSI V2 DSG Euro 6 (s/s) 5dr",
+      "leaseprice": 294,
+      "monthly_exact": 293.58,
+      "listing_id": "202412247518674",
+      "url": "https://www.autotrader.co.uk/cars/leasing/product/202412247518674?leaseContractType=personal&leaseOption=12_24_5000",
+      "frame_name": "PMAX_Hotdeals_CupraTerramar_EtsiV2",
+      "slug": "CupraTerramar_EtsiV2",
+      "figma_car_mode": "CUPRA",
+      "has_pmax": true
+    },
+    {
+      "headline": "Renault 5 E-Tech electric",
+      "subheadline": "comfort range 52kWh techno+ Auto 5dr",
+      "leaseprice": 218,
+      "monthly_exact": 217.38,
+      "listing_id": "202512238782282",
+      "url": "https://www.autotrader.co.uk/cars/leasing/product/202512238782282?leaseContractType=personal&leaseOption=12_24_6000",
+      "frame_name": "PMAX_Hotdeals_Renault5_TechnoPlus",
+      "slug": "Renault5_TechnoPlus",
+      "figma_car_mode": "Renault 5 Techno+",
+      "has_pmax": true
+    },
+    {
+      "headline": "Nissan Qashqai",
+      "subheadline": "1.5 h e-POWER Acenta Premium Auto Euro 6 (s/s) 5dr",
+      "leaseprice": 251,
+      "monthly_exact": 250.38,
+      "listing_id": "202509106209482",
+      "url": "https://www.autotrader.co.uk/cars/leasing/product/202509106209482",
+      "frame_name": null,
+      "slug": null,
+      "figma_car_mode": null,
+      "has_pmax": false
+    },
+    {
+      "headline": "Volkswagen Golf",
+      "subheadline": "2.0 TSI GTI DSG Euro 6 (s/s) 5dr",
+      "leaseprice": 302,
+      "monthly_exact": 301.78,
+      "listing_id": "202407041427990",
+      "url": "https://www.autotrader.co.uk/cars/leasing/product/202407041427990?leaseContractType=personal&leaseOption=12_24_6000",
+      "frame_name": "PMAX_Hotdeals_VolkswagenGolf_Gti",
+      "slug": "VolkswagenGolf_Gti",
+      "figma_car_mode": "Volkswagen Golf GTI",
+      "has_pmax": true
+    },
+    {
+      "headline": "MINI Countryman",
+      "subheadline": "1.5C MHEV Classic Auto Euro 6 (s/s) 5dr",
+      "leaseprice": 279,
+      "monthly_exact": 278.04,
+      "listing_id": "202310253332114",
+      "url": "https://www.autotrader.co.uk/cars/leasing/product/202310253332114",
+      "frame_name": null,
+      "slug": null,
+      "figma_car_mode": null,
+      "has_pmax": false
+    },
+    {
+      "headline": "Renault Symbioz",
+      "subheadline": "1.3 TCe MHEV techno Euro 6 (s/s) 5dr",
+      "leaseprice": 174,
+      "monthly_exact": 173.97,
+      "listing_id": "202507264861869",
+      "url": "https://www.autotrader.co.uk/cars/leasing/product/202507264861869?leaseContractType=personal&leaseOption=12_24_8000",
+      "frame_name": "PMAX_Hotdeals_RenaultSymbioz_TceTechno",
+      "slug": "RenaultSymbioz_TceTechno",
+      "figma_car_mode": "Renault Symbioz",
+      "has_pmax": true
+    }
+  ]
+}

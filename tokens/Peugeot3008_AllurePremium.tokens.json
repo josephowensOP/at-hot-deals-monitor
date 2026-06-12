@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "242"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "Peugeot 3008"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "1.2 Allure Premium e-DSC Euro 6 (s/s) 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £2,900.71, followed by 35 monthly rentals of £241.73 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202602190051119",
+  "$extensions": {
+    "com.figma.modeName": "Peugeot 3008"
+  },
+  "$cars_variant": "Peugeot 3008",
+  "$pmax_slug": "Peugeot3008_AllurePremium"
+}

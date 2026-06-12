@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "218"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "Renault 5 E-Tech electric"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "comfort range 52kWh techno+ Auto 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £2,608.58, followed by 23 monthly rentals of £217.38 (inc. VAT). 6,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202512238782282?leaseOption=12_24_6000",
+  "$extensions": {
+    "com.figma.modeName": "Renault 5 Techno+"
+  },
+  "$cars_variant": "Renault 5 Techno+",
+  "$pmax_slug": "Renault5_TechnoPlus"
+}

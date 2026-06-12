@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "228"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "BYD Sealion 5"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "1.5 12.96kWh Comfort CVT Auto Euro 6 (s/s) 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £2,731.77, followed by 35 monthly rentals of £227.65 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202602069727145?leaseOption=12_36_5000",
+  "$extensions": {
+    "com.figma.modeName": "BYD Sealion 5 - Comfort"
+  },
+  "$cars_variant": "BYD Sealion 5 - Comfort",
+  "$pmax_slug": "BydSealion5_Comfort"
+}

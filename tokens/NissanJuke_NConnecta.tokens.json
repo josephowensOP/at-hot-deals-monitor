@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "193"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "Nissan Juke"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "1.0 DIG-T N-Connecta Euro 6 (s/s) 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £2,307.81, followed by 47 monthly rentals of £192.32 (inc. VAT). 6,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202408283373052?leaseOption=12_48_6000",
+  "$extensions": {
+    "com.figma.modeName": "Nissan Juke N-Connecta"
+  },
+  "$cars_variant": "Nissan Juke N-Connecta",
+  "$pmax_slug": "NissanJuke_NConnecta"
+}

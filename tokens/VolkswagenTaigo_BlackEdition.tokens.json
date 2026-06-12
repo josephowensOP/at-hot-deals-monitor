@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "220"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "Volkswagen Taigo"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "1.5 TSI Black Edition DSG Euro 6 (s/s) 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £2,631.31, followed by 35 monthly rentals of £219.28 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202407041428047?pageNumber=2&leaseContractType=personal&leaseOption=12_36_5000",
+  "$extensions": {
+    "com.figma.modeName": "Volkswagen Taigo"
+  },
+  "$cars_variant": "Volkswagen Taigo",
+  "$pmax_slug": "VolkswagenTaigo_BlackEdition"
+}

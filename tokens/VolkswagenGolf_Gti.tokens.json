@@ -1,0 +1,24 @@
+{
+  "leaseprice": {
+    "$type": "string",
+    "$value": "302"
+  },
+  "headline": {
+    "$type": "string",
+    "$value": "Volkswagen Golf"
+  },
+  "subheadline": {
+    "$type": "string",
+    "$value": "2.0 TSI GTI DSG Euro 6 (s/s) 5dr"
+  },
+  "terms": {
+    "$type": "string",
+    "$value": "*Personal Contract Hire (PCH). Initial rental £3,621.34, followed by 23 monthly rentals of £301.78 (inc. VAT). 6,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+  },
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202407041427990?leaseOption=12_24_6000",
+  "$extensions": {
+    "com.figma.modeName": "Volkswagen Golf GTI"
+  },
+  "$cars_variant": "Volkswagen Golf GTI",
+  "$pmax_slug": "VolkswagenGolf_Gti"
+}
