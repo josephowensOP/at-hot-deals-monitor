@@ -1,7 +1,7 @@
 {
   "leaseprice": {
     "$type": "string",
-    "$value": "218"
+    "$value": "253"
   },
   "headline": {
     "$type": "string",
@@ -13,9 +13,9 @@
   },
   "terms": {
     "$type": "string",
-    "$value": "*Personal Contract Hire (PCH). Initial rental £2,608.58, followed by 23 monthly rentals of £217.38 (inc. VAT). 6,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+    "$value": "*Personal Contract Hire (PCH). Initial rental £3,030.00, followed by 47 monthly rentals of £252.50 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
   },
-  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202512238782282?leaseOption=12_24_6000",
+  "$url": "https://www.autotrader.co.uk/cars/leasing/product/202512238782282?leaseContractType=personal",
   "$extensions": {
     "com.figma.modeName": "Renault 5 Techno+"
   },

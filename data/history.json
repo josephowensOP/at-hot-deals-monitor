@@ -1,1 +1,79 @@
-{}
+{
+  "VolkswagenTCross_Match": {
+    "headline": "Volkswagen T-Cross",
+    "prices": [
+      {
+        "timestamp": "2026-11-17T04:51:52.990753+00:00",
+        "price": 176,
+        "previous": 164,
+        "direction": "up"
+      }
+    ]
+  },
+  "BydSeal_Design": {
+    "headline": "BYD Seal",
+    "prices": [
+      {
+        "timestamp": "2026-11-17T04:51:52.990753+00:00",
+        "price": 378,
+        "previous": 299,
+        "direction": "up"
+      }
+    ]
+  },
+  "Jaecoo7_ShsLuxury": {
+    "headline": "JAECOO 7",
+    "prices": [
+      {
+        "timestamp": "2026-11-17T04:51:52.990753+00:00",
+        "price": 306,
+        "previous": 300,
+        "direction": "up"
+      }
+    ]
+  },
+  "CupraTerramar_EtsiV2": {
+    "headline": "CUPRA Terramar",
+    "prices": [
+      {
+        "timestamp": "2026-11-17T04:51:52.990753+00:00",
+        "price": 414,
+        "previous": 294,
+        "direction": "up"
+      }
+    ]
+  },
+  "Renault5_TechnoPlus": {
+    "headline": "Renault 5 E-Tech electric",
+    "prices": [
+      {
+        "timestamp": "2026-11-17T04:51:52.990753+00:00",
+        "price": 253,
+        "previous": 218,
+        "direction": "up"
+      }
+    ]
+  },
+  "VolkswagenGolf_Gti": {
+    "headline": "Volkswagen Golf",
+    "prices": [
+      {
+        "timestamp": "2026-11-17T04:51:52.990753+00:00",
+        "price": 273,
+        "previous": 302,
+        "direction": "down"
+      }
+    ]
+  },
+  "RenaultSymbioz_TceTechno": {
+    "headline": "Renault Symbioz",
+    "prices": [
+      {
+        "timestamp": "2026-11-17T04:51:52.990753+00:00",
+        "price": 242,
+        "previous": 174,
+        "direction": "up"
+      }
+    ]
+  }
+}
