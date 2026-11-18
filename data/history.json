@@ -62,6 +62,12 @@
         "price": 273,
         "previous": 302,
         "direction": "down"
+      },
+      {
+        "timestamp": "2026-11-18T03:56:24.469398+00:00",
+        "price": 256,
+        "previous": 273,
+        "direction": "down"
       }
     ]
   },
