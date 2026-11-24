@@ -1,7 +1,7 @@
 {
   "leaseprice": {
     "$type": "string",
-    "$value": "414"
+    "$value": "409"
   },
   "headline": {
     "$type": "string",
@@ -13,7 +13,7 @@
   },
   "terms": {
     "$type": "string",
-    "$value": "*Personal Contract Hire (PCH). Initial rental £4,958.85, followed by 47 monthly rentals of £413.24 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
+    "$value": "*Personal Contract Hire (PCH). Initial rental £4,907.05, followed by 47 monthly rentals of £408.92 (inc. VAT). 5,000 miles p.a. You will not own the car. Excess mileage charges and return conditions apply. Subject to availability and credit status. T&Cs apply. 18+. Autotrader Limited is a credit broker, not a lender"
   },
   "$url": "https://www.autotrader.co.uk/cars/leasing/product/202412247518674?leaseContractType=personal",
   "$extensions": {

@@ -40,6 +40,12 @@
         "price": 414,
         "previous": 294,
         "direction": "up"
+      },
+      {
+        "timestamp": "2026-11-24T01:22:10.119879+00:00",
+        "price": 409,
+        "previous": 414,
+        "direction": "down"
       }
     ]
   },
@@ -51,6 +57,12 @@
         "price": 253,
         "previous": 218,
         "direction": "up"
+      },
+      {
+        "timestamp": "2026-11-24T01:22:10.119879+00:00",
+        "price": 233,
+        "previous": 253,
+        "direction": "down"
       }
     ]
   },

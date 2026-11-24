@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-11-23T13:50:50.410429+00:00",
+  "last_checked": "2026-11-24T01:22:10.119879+00:00",
   "source": "https://www.autotrader.co.uk/cars/leasing",
   "deals": [
     {
@@ -65,8 +65,8 @@
     {
       "headline": "CUPRA Terramar",
       "subheadline": "1.5 eTSI V2 DSG Euro 6 (s/s) 5dr",
-      "leaseprice": 414,
-      "monthly_exact": 413.24,
+      "leaseprice": 409,
+      "monthly_exact": 408.92,
       "listing_id": "202412247518674",
       "url": "https://www.autotrader.co.uk/cars/leasing/product/202412247518674?leaseContractType=personal&leaseOption=12_24_5000",
       "frame_name": "PMAX_Hotdeals_CupraTerramar_EtsiV2",
@@ -77,8 +77,8 @@
     {
       "headline": "Renault 5 E-Tech electric",
       "subheadline": "comfort range 52kWh techno+ Auto 5dr",
-      "leaseprice": 253,
-      "monthly_exact": 252.5,
+      "leaseprice": 233,
+      "monthly_exact": 232.75,
       "listing_id": "202512238782282",
       "url": "https://www.autotrader.co.uk/cars/leasing/product/202512238782282?leaseContractType=personal&leaseOption=12_24_6000",
       "frame_name": "PMAX_Hotdeals_Renault5_TechnoPlus",
