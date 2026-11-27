@@ -29,6 +29,12 @@
         "price": 306,
         "previous": 300,
         "direction": "up"
+      },
+      {
+        "timestamp": "2026-11-27T19:15:07.642053+00:00",
+        "price": 304,
+        "previous": 306,
+        "direction": "down"
       }
     ]
   },
@@ -63,6 +69,12 @@
         "price": 233,
         "previous": 253,
         "direction": "down"
+      },
+      {
+        "timestamp": "2026-11-27T19:15:07.642053+00:00",
+        "price": 231,
+        "previous": 233,
+        "direction": "down"
       }
     ]
   },
@@ -80,6 +92,12 @@
         "price": 256,
         "previous": 273,
         "direction": "down"
+      },
+      {
+        "timestamp": "2026-11-27T19:15:07.642053+00:00",
+        "price": 273,
+        "previous": 256,
+        "direction": "up"
       }
     ]
   },

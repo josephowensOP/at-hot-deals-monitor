@@ -1,5 +1,5 @@
 {
-  "last_checked": "2026-11-27T09:16:19.364661+00:00",
+  "last_checked": "2026-11-27T19:15:07.642053+00:00",
   "source": "https://www.autotrader.co.uk/cars/leasing",
   "deals": [
     {
@@ -41,8 +41,8 @@
     {
       "headline": "JAECOO 7",
       "subheadline": "1.5T SHS 18.3kWh Luxury Auto Euro 6 (s/s) 5dr",
-      "leaseprice": 306,
-      "monthly_exact": 305.67,
+      "leaseprice": 304,
+      "monthly_exact": 303.68,
       "listing_id": "202501107899510",
       "url": "https://www.autotrader.co.uk/cars/leasing/product/202501107899510?leaseContractType=personal&leaseOption=12_36_5000",
       "frame_name": "PMAX_Hotdeals_Jaecoo7_ShsLuxury",
@@ -77,8 +77,8 @@
     {
       "headline": "Renault 5 E-Tech electric",
       "subheadline": "comfort range 52kWh techno+ Auto 5dr",
-      "leaseprice": 233,
-      "monthly_exact": 232.75,
+      "leaseprice": 231,
+      "monthly_exact": 230.14,
       "listing_id": "202512238782282",
       "url": "https://www.autotrader.co.uk/cars/leasing/product/202512238782282?leaseContractType=personal&leaseOption=12_24_6000",
       "frame_name": "PMAX_Hotdeals_Renault5_TechnoPlus",
@@ -101,8 +101,8 @@
     {
       "headline": "Volkswagen Golf",
       "subheadline": "2.0 TSI GTI DSG Euro 6 (s/s) 5dr",
-      "leaseprice": 256,
-      "monthly_exact": 255.6,
+      "leaseprice": 273,
+      "monthly_exact": 272.8,
       "listing_id": "202407041427990",
       "url": "https://www.autotrader.co.uk/cars/leasing/product/202407041427990?leaseContractType=personal&leaseOption=12_24_6000",
       "frame_name": "PMAX_Hotdeals_VolkswagenGolf_Gti",
